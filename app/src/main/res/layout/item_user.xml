@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@color/black"
     >
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -12,7 +13,7 @@
         android:layout_height="90dp"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         app:civ_border_width="2dp"
-        app:civ_border_color="#00ffff"
+        app:civ_border_color="@color/white"
         />
 
     <TextView
@@ -24,6 +25,7 @@
         android:text="@string/dummy"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         android:layout_marginLeft="26dp"
         android:layout_toRightOf="@+id/img_avatar" />
 
@@ -34,6 +36,7 @@
         android:layout_below="@+id/txt_username"
         android:layout_marginStart="26dp"
         android:layout_marginTop="10dp"
+        android:textColor="@color/white"
         android:layout_toRightOf="@id/img_avatar"
         android:ellipsize="end"
         android:maxLines="3"
@@ -51,6 +54,7 @@
         android:ellipsize="end"
         android:maxLines="3"
         android:text="@string/dummy"
+        android:textColor="@color/white"
         android:layout_marginLeft="26dp" />
 
 

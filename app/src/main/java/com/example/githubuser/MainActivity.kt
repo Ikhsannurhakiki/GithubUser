@@ -1,9 +1,9 @@
 package com.example.githubuser
 
+import android.content.Intent
 import android.content.res.TypedArray
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Adapter
 import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.Toast
@@ -36,6 +36,19 @@ class MainActivity : AppCompatActivity() {
 
         listView.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
             Toast.makeText(this, users[position].name, Toast.LENGTH_SHORT).show()
+            val user = User(
+                dataUsername[position],
+                dataName[position],
+                dataLocation[position],
+                dataRepository[position],
+                dataCompany[position],
+                dataFollowers[position],
+                dataFollowing[position],
+                dataAvatar.getResourceId(position, -1),
+            )
+            val moveDetail = Intent(this@MainActivity, UserDetail::class.java)
+            moveDetail.putExtra(UserDetail.EXTRA_USER, user)
+            startActivity(moveDetail)
         }
     }
 
