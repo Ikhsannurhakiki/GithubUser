@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">GithubUser</string>
     <string name="dummy">dummy</string>
+    <string name="github_icon">GitHub Icon</string>
+    <string name="repository">Repository</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
 
     <string-array name="username">
         <item>JakeWharton</item>
